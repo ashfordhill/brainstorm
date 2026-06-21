@@ -3,6 +3,17 @@
 
 A collection of brainstorming ideas and projects.
 
+- [Brainstorm](#brainstorm)
+  - [iMessage Commands](#imessage-commands)
+    - [@factcheck](#factcheck)
+    - [FAQ](#faq)
+    - [Future Commands](#future-commands)
+      - [@emojifusion](#emojifusion)
+      - [@flip](#flip)
+- [](#)
+  - [Hardware \<-\> Software Implementation: Human Labor Reduction](#hardware---software-implementation-human-labor-reduction)
+  - [Archives](#archives)
+
 
 ## iMessage Commands
 
@@ -28,9 +39,9 @@ Introducing the `@factcheck` command, exclusively for iMessage! Skip that Google
 
 - This feature will be included in all iMessage chats, as a security measure per our terms of service. If wanting to opt out, users can go to `Settings -> General -> Chats -> Privacy -> Messaging -> Privacy -> iMessage -> Force SMS` and set `Force SMS` to on. 
 
-- Note that tech illiterate people may have trouble finding this setting. Therefore it will be on by default. Defaults are restored every phone reboot.
+- This setting will be on by default. Defaults are restored every phone reboot.
 
-> What other commands will be available in the future?
+### Future Commands
 
 - We are excited to add more commands in iMessage! While these are not confirmed to be future offerings, here are our current top contenders:
 
@@ -55,6 +66,7 @@ Introducing the `@factcheck` command, exclusively for iMessage! Skip that Google
 
  `"I'll just reverse it by sending another @flip!"` you say? Not so fast there, cowboy! `@flip` has a 10 minute cooldown. Fun for the whole family, forever!
 
+#
 
 ## Hardware <-> Software Implementation: Human Labor Reduction
 
@@ -62,11 +74,11 @@ Introducing the `@factcheck` command, exclusively for iMessage! Skip that Google
 <img src=".docs/hardware-ai-impl.svg" alt="Hardware AI implementation" width="800" />
 </p>
 
-In theory could be valuable if the framework were implemented well, even compared to giving a senior an AI tool to write a bunch of prompts and check over the outputs, building an app from scratch.
+In theory could be valuable if the framework were implemented well. It would need to be more efficient than giving an experienced SWE an AI tool to write a bunch of prompts and build the app from scratch.
 
-Some hardware would have additional features that would not be supported by the Hardware-AI Interface, but hopefully this sort of framework could
+Some hardware would have additional features that would not be supported by the Hardware-AI Interface, but hopefully a large majority of the implementation work for core features would be automated.
 
-The testing framework likely has value on its own. Many non-UI apps are just data inputs and data outputs so can be abstracted & automated.
+The testing framework likely has value on its own. Many non-UI apps are just data inputs and data outputs so they can be abstracted & automated.
 
 
 ## Archives
