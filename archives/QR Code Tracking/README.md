@@ -149,7 +149,7 @@ Plenty of businesses don't care to solve all inefficiency issues, which leaves p
 Unknown to most of the general public, there exists something called label brokers. There are some inefficiencies with competitive pricing and shipping label creation/maintenance among large-scale shipping services like USPS, UPS and FedEx.
 
 <div align="center" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-  <img src="../.docs/the-pirate-ship.svg" style="margin:0 8px;" />
+  <img src="../../.docs/the-pirate-ship.svg" style="margin:0 8px;" />
 </div>
 
 Small businesses and individuals looking to create shipping labels to ship out their items are sensitive to price and ease of use. 
@@ -165,7 +165,7 @@ How does the Pirate Ship get such a discount? All customer shipping labels get g
 This is more of a brainstorming thought exercise than anything serious around business creation. Here goes!
 
 <div align="center" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-  <img src="../.docs/bitly-pricing-features.png" width="400" style="margin:0 8px;" />
+  <img src="../../.docs/bitly-pricing-features.png" width="400" style="margin:0 8px;" />
 </div>
 
 <div align="center"><em>Bitly pricing as of 3/22/2026</em></div>

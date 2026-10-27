@@ -1,0 +1,281 @@
+{
+  "type": "automation-illustrator",
+  "version": 2,
+  "source": "https://github.com/ashfordhill/automation-illustrator",
+  "appearance": {
+    "orientation": "horizontal",
+    "theme": {
+      "name": "Plum",
+      "colors": {
+        "chrome": "#3a2450",
+        "chromeWell": "#241632",
+        "chromeBtn": "#fbf7ff",
+        "chromeLine": "#c39bea",
+        "chromeInk": "#f6f0fc",
+        "yellow": "#f2c14e",
+        "paper": "#f1eaf8"
+      },
+      "texture": {
+        "pattern": "rings",
+        "color": "#c9b9dc"
+      }
+    }
+  },
+  "actors": [
+    {
+      "id": "h_2a91f4a9",
+      "kind": "human",
+      "name": "Alice",
+      "color": "#ff9fbf",
+      "role": "worker"
+    },
+    {
+      "id": "h_2ff85565",
+      "kind": "human",
+      "name": "Roy",
+      "color": "#f4c07a",
+      "role": "worker"
+    },
+    {
+      "id": "h_61a172c3",
+      "kind": "human",
+      "name": "Jack",
+      "color": "#5ed4a4",
+      "role": "worker"
+    },
+    {
+      "id": "h_5d04d968",
+      "kind": "human",
+      "name": "Missy",
+      "color": "#c89bf5",
+      "role": "worker"
+    },
+    {
+      "id": "r_e5c51b86",
+      "kind": "robot",
+      "name": "Robot",
+      "color": "#5ec4d8",
+      "robotKind": "ai",
+      "role": "LLM"
+    },
+    {
+      "id": "r_46a04b95",
+      "kind": "robot",
+      "name": "Robot",
+      "color": "#6ab0c8",
+      "robotKind": "script",
+      "role": "Script"
+    },
+    {
+      "id": "r_788dfcca",
+      "kind": "robot",
+      "name": "Robot",
+      "color": "#6366f1",
+      "robotKind": "agent",
+      "role": "Agent"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "s_d9b5a167",
+      "type": "step",
+      "position": {
+        "x": 32,
+        "y": 160
+      },
+      "stepKind": "travel",
+      "title": "supermarket",
+      "detail": "",
+      "split": "exclusive"
+    },
+    {
+      "id": "s_6f138205",
+      "type": "step",
+      "position": {
+        "x": 352,
+        "y": 32
+      },
+      "stepKind": "search",
+      "title": "Haleon promo items",
+      "detail": "",
+      "split": "exclusive"
+    },
+    {
+      "id": "s_dc59bd9f",
+      "type": "step",
+      "position": {
+        "x": 672,
+        "y": 128
+      },
+      "stepKind": "search",
+      "title": "Haleon reg items",
+      "detail": "",
+      "split": "exclusive"
+    },
+    {
+      "id": "d_3a2e925b",
+      "type": "dataField",
+      "position": {
+        "x": 672,
+        "y": 256
+      },
+      "label": "Item"
+    },
+    {
+      "id": "s_8ffc8677",
+      "type": "step",
+      "position": {
+        "x": 864,
+        "y": 128
+      },
+      "stepKind": "other",
+      "title": "Record item data",
+      "detail": "via retailmotus app",
+      "split": "exclusive"
+    },
+    {
+      "id": "s_f02ea11f",
+      "type": "step",
+      "position": {
+        "x": 1184,
+        "y": 128
+      },
+      "stepKind": "other",
+      "title": "Photograph item",
+      "detail": "via traxretail app",
+      "split": "exclusive"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_5ebabed8",
+      "source": "s_d9b5a167",
+      "target": "s_6f138205",
+      "label": "",
+      "dashed": false
+    },
+    {
+      "id": "e_1c1762a3",
+      "source": "s_d9b5a167",
+      "target": "s_dc59bd9f",
+      "label": "",
+      "dashed": false
+    },
+    {
+      "id": "e_2ed0948d",
+      "source": "s_dc59bd9f",
+      "target": "d_3a2e925b",
+      "label": "",
+      "dashed": false
+    },
+    {
+      "id": "e_06b205b6",
+      "source": "s_6f138205",
+      "target": "d_3a2e925b",
+      "label": "",
+      "dashed": false
+    },
+    {
+      "id": "e_1d65449c",
+      "source": "d_3a2e925b",
+      "target": "s_8ffc8677",
+      "label": "",
+      "dashed": false
+    },
+    {
+      "id": "e_3af1c026",
+      "source": "s_8ffc8677",
+      "target": "s_f02ea11f",
+      "label": "",
+      "dashed": false
+    }
+  ],
+  "assignments": {
+    "s_d9b5a167": "h_61a172c3",
+    "s_6f138205": "h_61a172c3",
+    "s_dc59bd9f": "h_61a172c3",
+    "s_8ffc8677": "h_61a172c3",
+    "s_f02ea11f": "h_61a172c3"
+  },
+  "looks": {
+    "h_61a172c3": {
+      "accessories": [
+        "tablet"
+      ]
+    }
+  },
+  "after": {
+    "assignments": {},
+    "groups": [],
+    "extraNodes": [],
+    "extraEdges": [],
+    "fork": {
+      "nodes": [
+        {
+          "id": "s_d9b5a167",
+          "type": "step",
+          "position": {
+            "x": 32,
+            "y": 160
+          },
+          "stepKind": "travel",
+          "title": "supermarket",
+          "detail": "",
+          "split": "exclusive"
+        },
+        {
+          "id": "s_dc59bd9f",
+          "type": "step",
+          "position": {
+            "x": 672,
+            "y": 128
+          },
+          "stepKind": "other",
+          "title": "Walk around store",
+          "detail": "recording video",
+          "split": "exclusive"
+        },
+        {
+          "id": "s_568ed6d1",
+          "type": "step",
+          "position": {
+            "x": 1312,
+            "y": 128
+          },
+          "stepKind": "review",
+          "title": "Review recording",
+          "detail": "parse & enter data",
+          "split": "exclusive"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e_1c1762a3",
+          "source": "s_d9b5a167",
+          "target": "s_dc59bd9f",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "id": "e_66829926",
+          "source": "s_dc59bd9f",
+          "target": "s_568ed6d1",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "assignments": {
+        "s_d9b5a167": "h_61a172c3",
+        "s_dc59bd9f": "h_61a172c3",
+        "s_568ed6d1": "r_788dfcca"
+      }
+    },
+    "looks": {
+      "h_61a172c3": {
+        "accessories": [
+          "sunglasses"
+        ]
+      }
+    }
+  }
+}
