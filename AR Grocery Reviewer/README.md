@@ -41,3 +41,5 @@ If he could scan down aisles to see which ones had the highest priority items, h
 But really a process like this could be automated into a robot that went up and down aisles to scan everything on the shelves and in the backrooms.
 
 ![](workflow.svg)
+
+Diagram written via [Automation Illustrator](https://github.com/ashfordhill/automation-illustrator) and `.illustrator` rendered to `.svg` via this [GitHub Action](https://github.com/ashfordhill/action-illustrator-render).
